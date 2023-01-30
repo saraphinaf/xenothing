@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="styles.css">
+<style>
+  html * {
+        font-size: 16px;
+        line-height: 1.625;
+        color: #2020131;
+        font-family: Nunito, sans-serif;
+      }
+</style>
 </head>
 <body>
   <h1>main page</h1>
