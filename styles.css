@@ -1,11 +1,10 @@
 body {
   background-color: red;
-  color: #330000;
+
 }
 h1 {
   color: yellow;
 }
 p {
   color: green;
-  font-family: Times New Roman;
 }
