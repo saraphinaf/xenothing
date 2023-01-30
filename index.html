@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
 
-<!-- <style>
-header { display: none;}
+<style>
+/*header { display: none;}
 body {background-color: green;}
 h1   {color: yellow;}
 html*    {color: blue;
-      font-family: Times New Roman;}
-</style> -->
+      font-family: Times New Roman;}*/
+body{
+    margin: 0; /* Remove default margin */
+    }
+iframe{      
+    display: block;  /* iframes are inline by default */   
+    height: 100vh;  /* Set height to 100% of the viewport height */   
+    width: 100vw;  /* Set width to 100% of the viewport width */     
+    border: none; /* Remove default border */
+    float: right;
+    }
+</style> 
 
 <body>
   <h1>The websiteeee</h1>
@@ -16,7 +26,8 @@ html*    {color: blue;
 
   <!-- <p><a href="theotherpage.html">Go to the next page as new page</a></p> -->
   <p><a href="theotherpage.html" target="iframe_a">Go to the next page embedded</a></p>
-  <iframe style="height: 100%; width: 50%; float: right; " height="100%" width="100%" name="iframe_a" title="Iframe Example"></iframe>
+  <div id="contentframe" style="position:relative; top: 160px; left: 0px;">
+    <iframe height="100%" width="100%" name="iframe_a" title="Iframe Example"></iframe>
 </body>
 
 </html>
