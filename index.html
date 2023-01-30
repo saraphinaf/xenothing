@@ -17,6 +17,9 @@ iframe{
     border: none; /* Remove default border */
     background: green;
     float: right;
+    position: relative;
+    top:0px;
+    bottom:0px
     }
 </style> 
 
@@ -27,10 +30,9 @@ iframe{
 
   <!-- <p><a href="theotherpage.html">Go to the next page as new page</a></p> -->
   <p><a href="theotherpage.html" target="iframe_a">Go to the next page embedded</a></p>
-  <!-- <div id="contentframe" style="top: 160px; left: 0px;">
-<iframe src="http://stackoverflow.com" style="height:100%;width:100%;position:absolute;top:0px;bottom:0px;">&lt;/div&gt;
-</iframe></div> -->
-    <iframe height="100%" width="100%" name="iframe_a" title="Iframe Example"></iframe>
+  <div id="contentframe" style="top: 0px; left: 200px;">
+    <iframe height="100%" width="100%" name="iframe_a" title="Iframe Example">&lt;/div&gt;</iframe>
+    </div>
 </body>
 
 </html>
