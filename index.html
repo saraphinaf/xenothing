@@ -13,9 +13,9 @@ body{
 iframe{      
     display: block;  /* iframes are inline by default */   
     height: 100vh;  /* Set height to 100% of the viewport height */   
-    width: 100vw;  /* Set width to 100% of the viewport width */     
+    width: 50vw;  /* Set width to 100% of the viewport width */     
     border: none; /* Remove default border */
-    background: green;
+    background: red;
     float: right;
     position: relative;
     top:0px;
@@ -31,7 +31,7 @@ iframe{
   <!-- <p><a href="theotherpage.html">Go to the next page as new page</a></p> -->
   <p><a href="theotherpage.html" target="iframe_a">Go to the next page embedded</a></p>
   <div id="contentframe" style="top: 0px; left: 200px;">
-    <iframe height="100%" width="100%" name="iframe_a" title="Iframe Example">&lt;/div&gt;</iframe>
+    <iframe name="iframe_a" title="Iframe Example">&lt;/div&gt;</iframe>
     </div>
 </body>
 
