@@ -2,8 +2,14 @@
 <html>
 
 <head>
+<style>
+header { display: none;}
+body {background-color: powderblue;}
+h1   {color: yellow;}
+html*    {color: yellow;
+      font-family: Times New Roman;}
+</style>
 </head>
-  
 <body>
   <h1>TEST</h1>
 <p>testing this bitchyyyyyy</p>
