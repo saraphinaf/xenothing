@@ -4,7 +4,7 @@
 <style>
 body {background-color: powderblue;}
 h1   {color: blue;}
-p    {color: red;
+html*    {color: red;
       font-family: Times New Roman;}
 </style>
 </head>
