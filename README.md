@@ -6,6 +6,9 @@ body {background-color: powderblue;}
 h1   {color: blue;}
 html*    {color: red;
       font-family: Times New Roman;}
+header {
+  display: none;
+}
 </style>
 </head>
 <body>
