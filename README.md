@@ -2,12 +2,9 @@
 <html>
 <head>
 <style>
-  html * {
-        font-size: 16px;
-        line-height: 1.625;
-        color: #2020131;
-        font-family: Nunito, sans-serif;
-      }
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
 </style>
 </head>
 <body>
