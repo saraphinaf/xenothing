@@ -2,6 +2,7 @@
 <html>
 <head>
 <style>
+header { display: none;}
 body {background-color: powderblue;}
 h1   {color: blue;}
 html*    {color: red;
