@@ -16,7 +16,6 @@ iframe{
     width: 50vw;  /* Set width to 100% of the viewport width */     
     border: none; /* Remove default border */
     float: right;
-    background: pink;
     position: relative;
     top:0px;
     bottom:0px;
@@ -45,11 +44,11 @@ div {
   //     'https://www.youtube.com/embed/3w0XfBU2ufw';
   // });
   function showDiv2(){
-  	var randomColor = Math.floor(Math.random()*16777215).toString(16);
-  	
+  	const randomColor = Math.floor(Math.random()*16777215).toString(16);
+
   	var divv = document.getElementById("contentframe3");
   	divv.style.display='block';
-  	divv.style.background=randomColor;
+  	divv.style.background="#" + randomColor;
 
   	var framee = document.getElementById("frame3");
   	framee.style.display='block';
