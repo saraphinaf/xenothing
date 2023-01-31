@@ -46,7 +46,8 @@ div {
     function getColor(this_frame){
         var randomColor = Math.floor(Math.random()*16777215).toString(16);
         var thisDivv = document.getElementById(this_ID);
-        thisDivv.style.background="#" + randomColor;
+        //thisDivv.style.background="#"+randomColor;
+        thisDivv.style.background="#"+red;
     }
     function createSaveButton(){
         // creating button element
