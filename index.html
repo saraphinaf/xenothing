@@ -33,19 +33,20 @@ iframe{
  <div id="contentframe" style="top: 0%; left: 50%; px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position: absolute; display: block; overflow-y: visible">
     <iframe name="iframe_a" scrolling="yes" title="Iframe Example">&lt;/div&gt;</iframe>
   </div>
-<!-- 
+
 <a href='http://www.google.com' onclick='return check()'>check</a>
- -->
+
 <script type='text/javascript'>
 
-// function check()
-// {
-//     return false;
-// }
-  $('a.yourlink').click(function(e) {
-    e.preventDefault();
-    window.open('http://youtube.com');
-    window.open('http://google.com');
+function check()
+{
+    return false;
+}
+
+$('a.yourlink').click(function(e) {
+  e.preventDefault();
+  window.open('http://youtube.com');
+  window.open('http://google.com');
 });
 </script>
 </body>
