@@ -15,7 +15,7 @@ iframe{
     height: 100vh;  /* Set height to 100% of the viewport height */   
     width: 50vw;  /* Set width to 100% of the viewport width */     
     border: none; /* Remove default border */
-    background: purple;
+    background: blue;
     float: right;
     position: relative;
     top:0px;
@@ -28,7 +28,7 @@ div {
 </head>
 <body>
 <p> lala
-<a href="javascript:;" class="yourlink">Click Here</a>
+<A HREF= “javascript:null” onClick=”javascript:JavaScript_Function()”>Click Here</A>
 </p>
 <p>There once was a dog named Sara. She woke up after a
   <a href="theotherpage.html" target="iframe_a"> restless slumber </a>
@@ -38,6 +38,7 @@ div {
 </div>
 
 <script type='text/javascript'>
+ 
   $('a.yourlink').click(function(e) {
     e.preventDefault();
     window.open('http://youtube.com');
