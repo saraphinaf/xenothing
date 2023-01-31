@@ -37,7 +37,7 @@ div {
 }
 </style>
 <script>
-    var clickedTrue=new Boolean(false)
+    //var clickedTrue=new Boolean(false)
     //var clickedTrue = false;
     function validate() {
         var element = document.getElementById('input-field');
@@ -58,18 +58,19 @@ div {
 
         //replace textbox the latest div with the user's text
         //changes clickedtrue from false to now true
-        clickedTrue = clickedTrue? false : true;
-        if (clickedTrue==true){
+        //clickedTrue = clickedTrue? false : true;
+        //if (clickedTrue==true){
             document.getElementById("contentframe5").style.background = "red";
             //fieldNameElement.textContent = "inputContent";
-            var inputContentHere = document.getElementById("input-field").value;
-            //fieldNameElement.textContent = inputContentHere;
             var inputField = document.getElementById('input-field');
+            var inputContentHere = inputField.value;
+            //fieldNameElement.textContent = inputContentHere;
+            
             inputField.style.display = 'none';
             
             document.getElementById("textInContentframe6").textContent = inputContentHere;
-            document.getElementById("testing").textContent = "dude";       
-        }   
+            document.getElementById("testing").innerHTML = "dude";       
+        //}   
 
     }
     //var buttonn = document.getElementById('btn')
