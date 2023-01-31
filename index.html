@@ -16,7 +16,7 @@ body{
     width: 50vw;
     }
 iframe{      
-    display: block;  /* iframes are inline by default */   
+    display: hidden;  /* iframes are inline by default */   
     height: 100vh;  /* Set height to 100% of the viewport height */   
     width: 50vw;  /* Set width to 100% of the viewport width */     
     border: none; /* Remove default border */
@@ -35,10 +35,17 @@ div {
   overflow-x: scroll;
   overflow-y: scroll;
   overflow: scroll;
+  display: hidden;
 }
 </style> 
 <script>
   
+  function showDiv(){
+    var divv = document.getElementById("contentframe");
+    divv.style.display='block'
+    var framee = document.getElementById("frame1");
+    framee.style.display='block'
+  }
     // $('a.yourlink').click(function(e) {
     // e.preventDefault();
     // window.open('http://youtube.com');
@@ -57,10 +64,10 @@ div {
 <!-- This also works <a href=javascript:void(0); onclick="Java_Funct();"> Or Click Here</a> -->
 <!-- This doesn't work but goes with original a.yourlink code <a href="#" class="yourlink">orrr click hereee</a> -->
 <p>There once was a dog named Sara. She woke up after a
-  <a href="theotherpage.html" target="iframe_a"> restless slumber </a>
+  <a href="theotherpage.html" target="iframe_a" onclick="showDiv();"> restless slumber </a>
   . Then she made breakfast. It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was aas a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It was a lognnnnnn It </p>
  <div id="contentframe" style="top: 0%; left: 50%;margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; width: 50vw; height: 100vh; position: absolute; display: block; overflow-x: scroll; overflow-y: scroll;">
-    <iframe name="iframe_a" title="Iframe Example">&lt;/div&gt;</iframe>
+    <iframe name="iframe_a" id="frame1" title="Iframe Example">&lt;/div&gt;</iframe>
 </div>
 
 <script type='text/javascript'>
