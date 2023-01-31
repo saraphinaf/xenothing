@@ -15,7 +15,7 @@ iframe{
     height: 100vh;  /* Set height to 100% of the viewport height */   
     width: 50vw;  /* Set width to 100% of the viewport width */     
     border: none; /* Remove default border */
-    background: yellow;
+    background: green;
     float: right;
     position: relative;
     top:0px;
@@ -25,10 +25,21 @@ div {
   word-wrap: break-word;
 }
 </style> 
+<script>
+    // $('a.yourlink').click(function(e) {
+    // e.preventDefault();
+    // window.open('http://youtube.com');
+    // window.open('http://google.com');
+    // });
+    function Java_Funct() {
+      window.open('http://youtube.com');
+      window.open('http://google.com');
+    }
+  </script>
 </head>
 <body>
 <p> lala
-<A HREF= “javascript:null” onClick=”javascript:yourlink.click()”>Click Here</A>
+<a href=“javascript:null” onClick=“javascript:Java_Funct()”>Click Here</a>
 </p>
 <p>There once was a dog named Sara. She woke up after a
   <a href="theotherpage.html" target="iframe_a"> restless slumber </a>
@@ -38,13 +49,7 @@ div {
 </div>
 
 <script type='text/javascript'>
- 
-  $('a.yourlink').click(function(e) {
-    e.preventDefault();
-    window.open('http://youtube.com');
-    window.open('http://google.com');
-  });
-</script>
+  </script>
 </body>
 
 </html>
