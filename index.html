@@ -19,7 +19,7 @@ iframe{
     height: 100vh;  /* Set height to 100% of the viewport height */   
     width: 50vw;  /* Set width to 100% of the viewport width */     
     border: none; /* Remove default border */
-    background: pink;
+    background: blue;
     float: right;
     position: relative;
     top:0px;
@@ -45,6 +45,7 @@ div {
     function Java_Funct() {
       window.open('http://youtube.com');
       window.open('http://google.com');
+      // gotta now instead of opening windows, open two iframes, like maybe with targets or something to replace that? or hrefs? or just open the files?
     }
   </script>
 </head>
@@ -61,9 +62,8 @@ div {
  <div id="contentframe" style="top: 0%; left: 50%; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position: absolute; display: block; overflow-y: scroll; overflow-x: scroll;">
     <iframe name="iframe_a" title="Iframe Example">&lt;/div&gt;</iframe>
 </div>
-
 <script type='text/javascript'>
-  </script>
+</script>
 </body>
 
 </html>
