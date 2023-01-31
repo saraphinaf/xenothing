@@ -43,9 +43,9 @@ div {
         var element = document.getElementById('input-field');
         element.value = element.value.replace(/[^a-zA-Z0-9@]+/, '');
     };
-    function getColor(thisID){
+    function getColor(this_frame){
         var randomColor = Math.floor(Math.random()*16777215).toString(16);
-        var thisDivv = document.getElementById(thisID);
+        var thisDivv = document.getElementById(this_ID);
         thisDivv.style.background="#" + randomColor;
     }
     function createSaveButton(){

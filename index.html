@@ -14,7 +14,7 @@ body{
     overflow-y: scroll;
     overflow: scroll;
     width: 50vw;
-    background-color: white;
+    
     }
 iframe{      
     display: hidden;  /* iframes are inline by default */   
@@ -42,7 +42,8 @@ div {
   function getBodyColor(){
     var randomColor = Math.floor(Math.random()*16777215).toString(16);
     var bodyy = document.getElementById("theBody");
-    bodyy.style.background-color="#" + randomColor;
+    //bodyy.style.background-color="#" + randomColor;
+    bodyy.style.background-color="red";
   }
   function showDiv(){
     var randomColor = Math.floor(Math.random()*16777215).toString(16);
