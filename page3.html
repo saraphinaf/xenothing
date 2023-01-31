@@ -67,7 +67,8 @@ div {
             //fieldNameElement.textContent = inputContentHere;
             
             inputField.style.display = 'none';
-            getElementById("btn").style.display = 'none';
+            var buttonnn = getElementById('btn');
+            buttonn.style.display = 'none';
             
             document.getElementById("textInContentframe6").textContent = inputContentHere; 
             console.log("dudeeee");    
@@ -84,8 +85,8 @@ div {
     <p>Jackaaaaaaaaaaaaaaaaaaaaaaaaa2Jackaaaaaaaaaaaaaaaaaaaaaaaaa2Jackaaaaaaaaaaaaaaaaaaaaaaaaa2</p>
     <div id="contentframe6" style="top: 0; left: 0%; background: blue; position: relative; display: block; overflow-y: scroll; overflow-x: scroll; width: 100vw;">
          <p id="textInContentframe6"></p>
-         <input type="text" id="input-field" display="block" value="" onkeyup="validate();" />
-        <button type = "button" id = "btn" onclick = "createSaveButton();" display="block">
+         <input type="text" id="input-field" value="" onkeyup="validate();" style="display: block;" />
+        <button type = "button" id = "btn" onclick = "createSaveButton();" style="display: block;">
             Save
         </button>
     </div>
