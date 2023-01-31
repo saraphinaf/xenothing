@@ -15,12 +15,15 @@ iframe{
     height: 100vh;  /* Set height to 100% of the viewport height */   
     width: 50vw;  /* Set width to 100% of the viewport width */     
     border: none; /* Remove default border */
-    background: yellow;
+    background: pink;
     float: right;
     position: relative;
     top:0px;
     bottom:0px;
     }
+div {
+  word-wrap: break-word;
+}
 </style> 
 </head>
 <body>
@@ -30,8 +33,8 @@ iframe{
 <p>There once was a dog named Sara. She woke up after a
   <a href="theotherpage.html" target="iframe_a"> restless slumber </a>
   . Then she made breakfast.</p>
- <div id="contentframe" style="top: 0%; left: 50%; px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position: absolute; display: block; overflow-y: visible">
-    <iframe name="iframe_a" scrolling="yes" title="Iframe Example">&lt;/div&gt;</iframe>
+ <div id="contentframe" style="top: 0%; left: 50%; px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position: absolute; display: block; overflow-y: scroll">
+    <iframe name="iframe_a" title="Iframe Example">&lt;/div&gt;</iframe>
   </div>
 
 <a href='http://www.google.com' onclick='return check()'>check</a>
