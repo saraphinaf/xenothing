@@ -36,6 +36,12 @@ div {
   height: 100vh;
 }
 </style>
+<script>
+    function validate() {
+        var element = document.getElementById('input-field');
+        element.value = element.value.replace(/[^a-zA-Z0-9@]+/, '');
+    };
+</script>
 </head>
 <body>
 <p>Jackaaa</p>
@@ -43,6 +49,7 @@ div {
     <p>Jackaaaaaaaaaaaaaaaaaaaaaaaaa2Jackaaaaaaaaaaaaaaaaaaaaaaaaa2Jackaaaaaaaaaaaaaaaaaaaaaaaaa2</p>
     <div id="contentframe6" style="top: 0; left: 0%; background: blue; position: relative; display: block; overflow-y: scroll; overflow-x: scroll; width: 100vw;">
          <p>Jackaaaaaaaa3Jackaaaaaaaa3Jackaaaaaaaa3</p>
+         <input type="text" id="input-field" onkeyup="validate();" />
     </div>
  
 <!--     <iframe name="iframe_4" id="frame4" style="background: blue; top:33%; left: 0%; height: 100vh; width: 50vw; position: absolute;" scrolling="yes" title="Iframe Example4">
