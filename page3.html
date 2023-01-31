@@ -59,11 +59,7 @@ div {
         //replace textbox the latest div with the user's text
         //changes clickedtrue from false to now true
         clickedTrue = clickedTrue? false : true;
-
-    }
-    //var buttonn = document.getElementById('btn')
-
-    if (clickedTrue == true){
+        if (clickedTrue==true){
             document.getElementById("contentframe5").style.background = "red";
             //fieldNameElement.textContent = "inputContent";
             var inputContentHere = document.getElementById("input-field").value;
@@ -72,9 +68,12 @@ div {
             inputField.style.display = 'none';
             
             document.getElementById("textInContentframe6").textContent = inputContentHere;
-            document.getElementById("testing").textContent = "dude";
-            
+            document.getElementById("testing").textContent = "dude";       
+        }   
+
     }
+    //var buttonn = document.getElementById('btn')
+
 </script>
 </head>
 <body>
