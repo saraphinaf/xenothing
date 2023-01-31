@@ -11,11 +11,12 @@ body{
     width: 50vw;
     }
 iframe{      
-    display: block;  /* iframes are inline by default */   
+    display: hidden;  /* iframes are inline by default */   
     height: 100vh;  /* Set height to 100% of the viewport height */   
     width: 50vw;  /* Set width to 100% of the viewport width */     
     border: none; /* Remove default border */
     float: right;
+    background: red;
     position: relative;
     top:0px;
     bottom:0px;
@@ -43,7 +44,9 @@ div {
   //     'https://www.youtube.com/embed/3w0XfBU2ufw';
   // });
   function showDiv(){
-  	var framee = document.getElementById("contentframe3");
+  	var divv = document.getElementById("contentframe3");
+  	divv.style.display='block'
+  	var framee = document.getElementById("frame3");
   	framee.style.display='block'
   }
 
