@@ -67,8 +67,9 @@ div {
     function updateText(fieldName){
         var fieldNameElement = document.getElementById('textInContentframe6');
         if (clickedTrue = true){
-            fieldNameElement.textContent = "inputContent";
-            //document.getElementById("input-field").value = 
+            //fieldNameElement.textContent = "inputContent";
+            var inputContentHere = document.getElementById("input-field").value
+            fieldNameElement.textContent = inputContentHere;
             var inputField = document.getElementById('input-field');
             inputField.style.display = 'none';
         }
@@ -81,7 +82,7 @@ div {
     <p>Jackaaaaaaaaaaaaaaaaaaaaaaaaa2Jackaaaaaaaaaaaaaaaaaaaaaaaaa2Jackaaaaaaaaaaaaaaaaaaaaaaaaa2</p>
     <div id="contentframe6" style="top: 0; left: 0%; background: blue; position: relative; display: block; overflow-y: scroll; overflow-x: scroll; width: 100vw;">
          <p id="textInContentframe6">Jackaaaaaaaa3Jackaaaaaaaa3Jackaaaaaaaa3</p>
-         <input type="text" id="input-field" value="inputContent" onkeyup="validate();" />
+         <input type="text" id="input-field" value="" onkeyup="validate();" />
         <button type = "button" id = "btn" onclick = "createSaveButton(); getElementById('hidden-div').style.display = 'block'; this.style.display = 'none'">
             Save
         </button>
