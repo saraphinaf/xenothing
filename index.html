@@ -46,25 +46,26 @@ div {
     bodyy.style.background-color="red";
   }
   function showDiv(){
-    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
     
     var divv = document.getElementById("contentframe");
     divv.style.display='block';
+    divv.style.background="#"+randomColor;
 
     var framee = document.getElementById("frame1");
     framee.style.display='block';
-    framee.style.background="#" + randomColor;
+    
   }
     // $('a.yourlink').click(function(e) {
     // e.preventDefault();
     // window.open('http://youtube.com');
     // window.open('http://google.com');
     // });
-    function Java_Funct() {
-      window.open('http://youtube.com');
-      window.open('http://google.com');
+    //function Java_Funct() {
+     // window.open('http://youtube.com');
+      //window.open('http://google.com');
       // gotta now instead of opening windows, open two iframes, like maybe with targets or something to replace that? or hrefs? or just open the files?
-    }
+   // }
   </script>
 </head>
 <body id="theBody" onload="getBodyColor();">
