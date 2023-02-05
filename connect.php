@@ -1,8 +1,8 @@
 <?php
 
-$storyinput = filter_input(INPUT_POST, 'phpStoryInput');
+$phpstoryinput = filter_input(INPUT_POST, 'phpstoryinput');
 
-if (!empty($storyinput)){
+if (!empty($phpstoryinput)){
 $host = "127.0.0.1";
 $dbusername = "root";
 $dbpassword = "12345678";
@@ -18,7 +18,7 @@ if (mysqli_connect_error()){
 else{
 	echo "at least this part slays";
 	$sql = "UPDATE links (Nugget)
-			SET Nugget = '$storyinput'
+			SET Nugget = '$phpstoryinput'
 			WHERE NuggetID = 5";
 	if($conn->quert($sql)){
 		echo "New record is inserted successfully";
