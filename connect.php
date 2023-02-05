@@ -16,6 +16,7 @@ if (mysqli_connect_error()){
 		. mysqli_connect_error());
 }
 else{
+	echo "at least this part slays";
 	$sql = "UPDATE links (Nugget)
 			SET Nugget = '$storyinput'
 			WHERE NuggetID = 5";
