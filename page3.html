@@ -37,8 +37,7 @@ div {
 }
 </style>
 <script>
-    //var clickedTrue=new Boolean(false)
-    //var clickedTrue = false;
+
     function validate() {
         var element = document.getElementById('input-field');
         element.value = element.value.replace(/[^a-zA-Z0-9@]+/, '');
@@ -47,43 +46,23 @@ div {
         var randomColor = Math.floor(Math.random()*16777215).toString(16);
         var realRandColor = "#"+randomColor;
         var thisDivv = document.getElementById(this_ID);
-        //thisDivv.style.background="#"+randomColor;
         return realRandColor;
-        //thisDivv.style.background="#"+red;
 
     }
-    function createSaveButton(){
-        // creating button element
-        var button = document.createElement('BUTTON');
-                 
-        // creating text to be
-        //displayed on button
-        var text = document.createTextNode("Button");
-                 
-        // appending text to button
-        button.appendChild(text);
+    // function createSaveButton(){
+    //     var button = document.createElement('BUTTON');         
+    //     var text = document.createTextNode("Button");
+    //     button.appendChild(text);
 
-        //document.getElementById('input-field').value = 
-
-        //replace textbox the latest div with the user's text
-        //changes clickedtrue from false to now true
-        //clickedTrue = clickedTrue? false : true;
-        //if (clickedTrue==true){
-            //document.getElementById("contentframe5").style.background = "red";
-            //fieldNameElement.textContent = "inputContent";
-            var inputField = document.getElementById('input-field');
-            var inputContentHere = inputField.value;
-            //fieldNameElement.textContent = inputContentHere;
+    //     var inputField = document.getElementById('input-field');
+    //     var inputContentHere = inputField.value;
             
-            document.getElementById("textInContentframe6").textContent = inputContentHere; 
+    //     document.getElementById("textInContentframe6").textContent = inputContentHere; 
             
-            inputField.style.display = 'none';
-            var buttonn = document.getElementById('btn');
-            buttonn.style.display = 'none'; 
-        //}   
-
-    }
-    //var buttonn = document.getElementById('btn')
+    //     inputField.style.display = 'none';
+    //     var buttonn = document.getElementById('btn');
+    //     buttonn.style.display = 'none'; 
+    // }
 
 </script>
 </head>
