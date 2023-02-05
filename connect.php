@@ -1,10 +1,8 @@
 <?php
 
-$username = filter_input(INPUT_POST, 'username');
-$password = filter_input(INPUT_POST, 'password');
-if (!empty($username)){
-	if(!empty($password)){
+$storyinput = filter_input(INPUT_POST, 'phpStoryInput');
 
+if (!empty($storyinput)){
 $host = "127.0.0.1";
 $dbusername = "root";
 $dbpassword = "12345678";
@@ -16,9 +14,10 @@ $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 if (mysqli_connect_error()){
 	die('Connect Error ('.mysqli_connect_errno() .') '
 		. mysqli_connect_error());
-} else{
-	$sql = "INSERT INTO links (NuggetID, Nugget, ParentNug)
-	values ('$username','$password')";
+}
+else{
+	$sql = "INSERT INTO links (Nugget)
+	values ('$storyinput')";
 	if($conn->quert($sql)){
 		echo "New record is inserted successfully";
 	}
@@ -26,16 +25,10 @@ if (mysqli_connect_error()){
 		echo "Error: ". $sql ."<br>". $conn->error;
 	}
 	$conn->close();
-}
-
-
-	} else{
-		echo "Password shold not be empty";
-		die();
-	}
+	
 }
 else{
-	echo "Username should not be empty";
+	echo "Story should not be empty";
 	die();
 }
 
