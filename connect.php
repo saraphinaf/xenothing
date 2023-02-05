@@ -16,8 +16,9 @@ if (mysqli_connect_error()){
 		. mysqli_connect_error());
 }
 else{
-	$sql = "INSERT INTO links (Nugget)
-	values ('$storyinput')";
+	$sql = "UPDATE links (Nugget)
+			SET Nugget = '$storyinput'
+			WHERE NuggetID = 5";
 	if($conn->quert($sql)){
 		echo "New record is inserted successfully";
 	}
@@ -25,7 +26,7 @@ else{
 		echo "Error: ". $sql ."<br>". $conn->error;
 	}
 	$conn->close();
-	
+
 }
 else{
 	echo "Story should not be empty";
