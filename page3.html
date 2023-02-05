@@ -93,10 +93,15 @@ div {
     <p>Sal had met Jack a few days ago, when Sal had moved to the area.</p>
     <div id="contentframe6" style="top: 0; left: 0%; position: relative; display: block; overflow-y: scroll; overflow-x: scroll; width: 100vw; color: getColor();">
          <p id="textInContentframe6"></p>
-         <input type="text" placeholder="Your writing here..." id="input-field" value="" onkeyup="validate();" style="display: block;" />
-        <button type = "button" id = "btn" onclick = "createSaveButton();" style="display: block;">
+        <form method="post" action="connect.php">
+            <input type="text" placeholder="Your writing here..." name="phpStoryInput" onkeyup="validate();" style="display: block;" />
+        <input type="submit" value="Submit">
+        </form>
+             <!-- <input type="text" placeholder="Your writing here..." id="input-field" value="" onkeyup="validate();" style="display: block;" /> -->
+        <!-- <button type = "button" id = "btn" onclick = "createSaveButton();" style="display: block;">
             Save
-        </button>
+        </button> -->
+
     </div>
  
 <!--     <iframe name="iframe_4" id="frame4" style="background: blue; top:33%; left: 0%; height: 100vh; width: 50vw; position: absolute;" scrolling="yes" title="Iframe Example4">
