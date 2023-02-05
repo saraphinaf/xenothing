@@ -4,44 +4,9 @@
     <meta charset="utf-8">
     <title>Script Output</title>
   </head>
+<?php $var="hi" ?>
   <body>
-      <?php echo $output; ?>
+      <p>hey <?php echo $var ?><p>
   </body>
 
-<?php
-$servername = "127.0.0.1";
-$username = "root";
-$password = "12345678";
-
-
-$conn = new mysqli($servername, $username, $password);
-
-
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-
-
-
-mysqli_select_db($conn, 'practicedb');
-$query = "SELECT  NuggetID, ParentNug, LinksInNug, LinkCDestY FROM links";
-
-
-while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-    echo "Nugget ID :{$row['NuggetID']}  <br> ".
-        "Parent Nugget : {$row['ParentNug']} <br> ".
-        "Links in Nugget : {$row['LinksInNug']} <br> ".
-        "--------------------------------<br>";
-    echo "hi";
-}
-
-
-
-
-echo "Fetched data successfully\n";
-
-
-
-?>
 </html>
