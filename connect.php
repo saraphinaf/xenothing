@@ -1,9 +1,11 @@
 <?php
 
+echo "made it to the php";
+
 $phpstoryinput = filter_input(INPUT_POST, 'phpstoryinput');
 
 if (!empty($phpstoryinput)){
-$host = "127.0.0.1";
+$host = "localhost";
 $dbusername = "root";
 $dbpassword = "12345678";
 $dbname = "practicedb";
