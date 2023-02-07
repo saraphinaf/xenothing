@@ -49,20 +49,20 @@ div {
         return realRandColor;
 
     }
-    // function createSaveButton(){
-    //     var button = document.createElement('BUTTON');         
-    //     var text = document.createTextNode("Button");
-    //     button.appendChild(text);
+    function createSaveButton(){
+        var button = document.createElement('BUTTON');         
+        var text = document.createTextNode("Button");
+        button.appendChild(text);
 
-    //     var inputField = document.getElementById('input-field');
-    //     var inputContentHere = inputField.value;
+        var inputField = document.getElementById('input-field');
+        var inputContentHere = inputField.value;
             
-    //     document.getElementById("textInContentframe6").textContent = inputContentHere; 
+        document.getElementById("textInContentframe6").textContent = inputContentHere; 
             
-    //     inputField.style.display = 'none';
-    //     var buttonn = document.getElementById('btn');
-    //     buttonn.style.display = 'none'; 
-    // }
+        inputField.style.display = 'none';
+        var buttonn = document.getElementById('btn');
+        buttonn.style.display = 'none'; 
+    }
 
 </script>
 </head>
@@ -72,15 +72,15 @@ div {
     <p>Sal had met Jack a few days ago, when Sal had moved to the area.</p>
     <div id="contentframe6" style="top: 0; left: 0%; position: relative; display: block; overflow-y: scroll; overflow-x: scroll; width: 100vw; color: getColor();">
          <p id="textInContentframe6"></p>
-        <form method="post" action="www.youtube.com">
-            <!-- <input type="text" placeholder="Your writing here..." name="phpStoryInput" onkeyup="validate();" style="display: block;" /> -->
+<!--         <form method="post" action="www.youtube.com">
+            <input type="text" placeholder="Your writing here..." name="phpStoryInput" onkeyup="validate();" style="display: block;" />
             <input type="text" placeholder="Your writing here..." name="phpstoryinput" style="display: block;" />
             <p><input type="submit" value="Submit" /></p>
-        </form>
-             <!-- <input type="text" placeholder="Your writing here..." id="input-field" value="" onkeyup="validate();" style="display: block;" /> -->
-        <!-- <button type = "button" id = "btn" onclick = "createSaveButton();" style="display: block;">
+        </form> -->
+             <input type="text" placeholder="Your writing here..." id="input-field" value="" onkeyup="validate();" style="display: block;" />
+        <button type = "button" id = "btn" onclick = "createSaveButton();" style="display: block;">
             Save
-        </button> -->
+        </button>
 
     </div>
  
